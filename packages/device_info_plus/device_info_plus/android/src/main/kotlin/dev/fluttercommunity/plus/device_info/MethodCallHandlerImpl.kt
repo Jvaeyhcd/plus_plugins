@@ -71,7 +71,7 @@ internal class MethodCallHandlerImpl(
             build["isLowRamDevice"] = activityManager.isLowRamDevice
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                 build["serialNumber"] = Build.UNKNOWN
-                
+
             } else {
                 @Suppress("DEPRECATION")
                 build["serialNumber"] = Build.SERIAL
